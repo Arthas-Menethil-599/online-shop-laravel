@@ -25,16 +25,16 @@
                     <tr>
                         <th class="text-center" scope="row">{{$product->id}}</th>
                         <td class="font-w600 font-size-sm">
-                            <a href="be_pages_generic_profile.html">{{$product->product_name}}</a>
+                            <a href="{{route('product.show', $product)}}">{{$product->product_name}}</a>
                         </td>
                         <td class="font-w600 font-size-sm">
-                            <a href="be_pages_generic_profile.html">{{$product->product_price}}</a>
+                            <a>{{$product->product_price}}</a>
                         </td>
                         <td class="font-w600 font-size-sm">
-                            <a href="be_pages_generic_profile.html">{{Str::limit($product->product_description, 30)}}</a>
+                            <a>{{Str::limit($product->product_description, 30)}}</a>
                         </td>
                         <td class="font-w600 font-size-sm">
-                            <a href="be_pages_generic_profile.html">{{$product->category()->first()->title}}</a>
+                            <a>{{$product->category()->first()->title}}</a>
                         </td>
                         <td class="text-center">
                             <div class="btn-group">

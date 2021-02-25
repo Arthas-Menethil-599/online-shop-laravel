@@ -1,5 +1,5 @@
 @extends('layouts.main_layout')
-@section('title', 'Product')
+@section('title', $product->product_name)
 @section('content')
 <!-- Page Content -->
 <div class="content">

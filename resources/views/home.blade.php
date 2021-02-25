@@ -3,7 +3,7 @@
 @section('content')
     <!-- Page Content -->
     <div class="content">
-        <div class="col-xl-8 order-xl-0">
+        <div class="col-xl-12 order-xl-0">
 
             <!-- Products -->
             <div class="row row-deck">

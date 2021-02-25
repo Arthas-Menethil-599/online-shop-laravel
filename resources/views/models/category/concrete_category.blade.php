@@ -1,9 +1,15 @@
+<?php
+$product = $products[0] ?? null;
+$name = 'Category';
+if($product)
+    $name = $product->category()->first()->title;
+?>
 @extends('layouts.main_layout')
-@section('title', 'Category')
+@section('title', $name)
 @section('content')
     <!-- Page Content -->
     <div class="content">
-            <div class="col-xl-8 order-xl-0">
+            <div class="col-xl-12 order-xl-0">
 
                 <!-- Products -->
                 <div class="row row-deck">
