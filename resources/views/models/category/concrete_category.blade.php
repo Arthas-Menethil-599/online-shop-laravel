@@ -36,6 +36,7 @@ if($product)
                         </div>
                     </div>
                     @endforeach
+
                 <!-- END Products -->
             </div>
         </div>

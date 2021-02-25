@@ -28,7 +28,7 @@ class ProductRequest extends FormRequest
 
         ];
     }
-
+    //test commit
     function validatedWithImage() {
         $data = $this->validated();
         if($this->hasFile('image')) {
